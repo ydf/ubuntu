@@ -10,6 +10,9 @@ ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
+
+ADD sites-enabled/ /etc/nginx/sites-enabled/
+
 ENV AUTHORIZED_KEYS **None**
 
 EXPOSE 22 80
