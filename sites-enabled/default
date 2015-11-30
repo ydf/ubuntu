@@ -1,5 +1,5 @@
-proxy_temp_path  /tmp;
-proxy_cache_path  /tmp  levels=1:2  keys_zone=STATIC:10m  inactive=24h  max_size=1g;
+proxy_temp_path  /tmp/tmp_path;
+proxy_cache_path  /tmp/cache  levels=1:2  keys_zone=STATIC:10m  inactive=24h  max_size=1g;
 server {
     listen 80 default_server;
     server_name bbs.trix2015.com;
